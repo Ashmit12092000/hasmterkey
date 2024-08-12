@@ -33,7 +33,7 @@ results = {}
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('t.html', games=games)
+    return render_template('index.html', games=games)
 
 @app.route('/generate_keys', methods=['POST'])
 def generate_keys():
